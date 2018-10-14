@@ -2,30 +2,32 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: lightgrey;
+}
 body {
     width: 550px;
     height: 350px;
-    
-    /* random style for guide */
-    border: 2px solid rgb(134, 94, 18);
-    display: inline-flex;
+    border: 2px solid rgb(44, 44, 44);
+    display: flex;
     flex-direction: row;
-    box-shadow: 0px 0px 10px grey;
+    box-shadow: 0px 5px 10px rgb(90, 90, 90);
     margin: auto;
     margin-top: 40px;
+    /* background-color: whitesmoke; */
+    background-image: linear-gradient(white,rgb(226, 225, 225));
 }
 
 .container {
     display: flex;
-    /* border: 1px solid aqua; */
 }
 
 .box {
-    border: 3px solid grey;
+    border: 2px solid #525252;
     flex: 1;
 }
 
-#half1, #half2{
+#half1{
     flex-flow: column;
     flex: 1;
 }
@@ -42,11 +44,12 @@ body {
 }
 #box3 {
     flex: 2;
+    background-color: yellow;
 }
 
 #lowerGroup {
     flex-direction: row;
-    flex: 8;
+    flex: 7;
 }
 #firstColumn {
     flex-direction: column;
@@ -59,11 +62,11 @@ body {
     flex: 2.25;
 }
 #box6 {
-    flex: 2.25;
+    flex: 2.4;
+    background-color: yellow;
 }
 #box7 {
-    flex: 0.75;
-    /* Cheat and remove right border */
+    flex: 0.65;
 }
 
 #middleColumn {
@@ -71,14 +74,16 @@ body {
     flex: 3;
 }
 #box8 {
-    flex: 2.9;
+    flex: 2.75;
+    background-color: red;
 }
 #box9to11 {
     flex-direction: row;
     flex: 1.5;
 }
 #box9 {
-    flex: auto;;
+    flex: auto;
+    background-color: black;
 }
 #box10to11 {
     flex-direction: column;
@@ -96,8 +101,7 @@ body {
     flex: 2;
 }
 #box13 {
-    flex: 1.1;
-    /* cheat and remove left border */
+    flex: 0.8;
 }
 #box14to16 {
     flex-direction: column;
@@ -105,10 +109,14 @@ body {
 }
 #box14 {
     flex: 1;
+    background-color: black;
 }
 #box15to16 {
     flex-direction: row;
     flex: 2;
+}
+#box15 {
+    background-color: yellow;
 }
 
 #lastColumn {
@@ -117,17 +125,118 @@ body {
 }
 #box17 {
     flex: 1.5;
+    background-color: yellow;
 }
 #box18to19 {
     flex-direction: row;
     flex: 1.5;
 }
 #box20 {
-    flex: 0.6;
+    flex: 0.75;
 }
 #box21 {
-    flex: 1.5;
+    flex: 1.6;
+    background-color: blue;
 }
 #box22 {
-    flex: 1.35;
+    flex: 1.5;
+    background-color: red;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Repeat all for half 2 but reverse directions */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#half2{
+    flex-flow: column-reverse;
+    flex: 1;
+}
+
+#half2 #topRow{
+    flex-direction: row-reverse;
+}
+#half2 #split3 {
+    flex: 2;
+}
+#half2 #box3 {
+    flex: 1;
+    background-color: white;
+}
+#half2 #box3-2 {
+    flex: 1;
+    background-color: black;
+}
+
+#half2 #lowerGroup {
+    flex-direction: row-reverse;
+}
+#half2 #firstColumn {
+    flex-direction: column-reverse;
+}
+
+#half2 #middleColumn {
+    flex-direction: column-reverse;
+}
+#half2 #box8 {
+    background-color: blue;
+}
+#half2 #box9to11 {
+    flex-direction: row-reverse;
+}
+#half2 #box9 {
+    background-color: black;
+}
+#half2 #box10to11 {
+    flex-direction: column-reverse;
+}
+#half2 #box12to16 {
+    flex-direction: row-reverse;
+}
+#half2 #box12to13 {
+    flex-direction: column-reverse;
+}
+
+#half2 #box14to16 {
+    flex-direction: column-reverse;
+}
+
+#half2 #box15to16 {
+    flex-direction: column-reverse;
+}
+
+#half2 #split16 {
+    flex: 1;
+}
+#half2 #box16 {
+    flex: auto;
+    background-color: yellow;
+}
+#half2 #box16-2 {
+    flex: auto;
+    background-color: black;
+}
+
+#half2 #lastColumn {
+    flex-direction: column-reverse;
+}
+#half2 #box17 {
+    background-color: yellow;
+}
+#half2 #box18to19 {
+    flex-direction: row-reverse;
+}
+
+#half2 #box21 {
+    background-color: red;
+}
+#half2 #box22 {
+    background-color: blue;
+}
+
+/* Box 7 & 13 merger */
+#half1 #box7, #half2 #box13 {
+    border-right: 0px;
+}
+#half1 #box13, #half2 #box7 {
+    border-left: 0px;
 }

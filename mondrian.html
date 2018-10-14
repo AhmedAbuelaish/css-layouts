@@ -66,13 +66,22 @@
             </div>
         </div>
     </div>
+
+<!-- Copy all boxes from half1 into container ID half2-->
+<!-- in CSS convert all row & column parameters to    -->
+<!-- row-reverse and column reverse parameters        -->
+<!-- adjust colors and add containers where necessary -->
+
     <div class="container" id="half2">
         <!-- Top Row -->
         <div class="container" id="topRow">
                 <div class="box" id="box1"></div>
                 <div class="box" id="box2"></div>
-                <div class="box" id="box3"></div>
-            </div>
+                <div class="container" id="split3">
+                    <div class="box" id="box3"></div>
+                    <div class="box" id="box3-2"></div>
+                </div>
+        </div>
             <!-- Lower Group of boxes -->
             <div class="container" id="lowerGroup">
                 <!-- First column on the left -->
@@ -104,7 +113,10 @@
                             <div class="box" id="box14"></div>
                             <div class="container" id="box15to16">
                                 <div class="box" id="box15"></div>
-                                <div class="box" id="box16"></div>
+                                <div class="container" id="split16">
+                                    <div class="box" id="box16"></div>
+                                    <div class="box" id="box16-2"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
