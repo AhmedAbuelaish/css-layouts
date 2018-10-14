@@ -1,27 +1,30 @@
+html {
+    box-sizing: border-box; 
+}
+
 .banner, .side, .content {
     border: 5px solid black;
 }
 body {
     display:flex;
     flex-direction: column;
-    width: 900px;
-    height: 600px;
+    flex: 100;
     border: 5px solid black;
     margin: 60px;
 }
 main {
     display:inline-flex;
-    flex: 1 100%;
+    flex: 100;
 }
 .banner {
     background-color: rgb(131, 202, 255);
 }
 .side {
-    flex: 1 0px;
+    flex: 1;
     background-color: rgb(204, 153, 204);
 }
 .content {
-    flex: 2 0px;
+    flex: 2;
     font-size: 18px;
     text-align: center;
     background-color: rgb(255, 204, 204);
@@ -35,5 +38,28 @@ h1 {
 h3 {
     font-size: 32px;
     text-align: center;
+}
+
+@media only screen and (max-width: 900px)and (min-width: 741px){
+    #ADBar {
+        display: none;
+    }
+    .side {
+        flex: 0.5;
+    }
+}
+
+@media only screen and (max-width: 740px){
+    main {
+        flex-direction: column;
+    }
+    #MenuBar, #ADBar{
+        display: inline-flex;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+    h3{
+        font-size: 20px;
+    }
 }
 

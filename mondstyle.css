@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 550px;
+    height: 350px;
+    
+    /* random style for guide */
+    border: 2px solid rgb(134, 94, 18);
+    display: inline-flex;
+    flex-direction: row;
+    box-shadow: 0px 0px 10px grey;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.container {
+    display: flex;
+    /* border: 1px solid aqua; */
+}
+
+.box {
+    border: 3px solid grey;
+    flex: 1;
+}
+
+#half1, #half2{
+    flex-flow: column;
+    flex: 1;
+}
+
+#topRow{
+    flex-direction: row;
+    flex: 1;
+}
+#box1 {
+    flex: 1.5;
+}
+#box2 {
+    flex: 2.5;
+}
+#box3 {
+    flex: 2;
+}
+
+#lowerGroup {
+    flex-direction: row;
+    flex: 8;
+}
+#firstColumn {
+    flex-direction: column;
+    flex: 1;
+}
+#box4 {
+    flex: 1.5;
+}
+#box5 {
+    flex: 2.25;
+}
+#box6 {
+    flex: 2.25;
+}
+#box7 {
+    flex: 0.75;
+    /* Cheat and remove right border */
+}
+
+#middleColumn {
+    flex-direction: column;
+    flex: 3;
+}
+#box8 {
+    flex: 2.9;
+}
+#box9to11 {
+    flex-direction: row;
+    flex: 1.5;
+}
+#box9 {
+    flex: auto;;
+}
+#box10to11 {
+    flex-direction: column;
+    flex: auto;
+}
+#box12to16 {
+    flex-direction: row;
+    flex: 2.25;
+}
+#box12to13 {
+    flex-direction: column;
+    flex: 1;
+}
+#box12 {
+    flex: 2;
+}
+#box13 {
+    flex: 1.1;
+    /* cheat and remove left border */
+}
+#box14to16 {
+    flex-direction: column;
+    flex: 1;
+}
+#box14 {
+    flex: 1;
+}
+#box15to16 {
+    flex-direction: row;
+    flex: 2;
+}
+
+#lastColumn {
+    flex-direction: column;
+    flex: 2;
+}
+#box17 {
+    flex: 1.5;
+}
+#box18to19 {
+    flex-direction: row;
+    flex: 1.5;
+}
+#box20 {
+    flex: 0.6;
+}
+#box21 {
+    flex: 1.5;
+}
+#box22 {
+    flex: 1.35;
+}
